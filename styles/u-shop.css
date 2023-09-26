@@ -316,7 +316,7 @@ em{
   background-color:#000; 
   color:white; 
   text-align:center;
-  padding-bottom:50px;
+  padding-inline:20px;
   line-height:30px;
   padding-top: 10px;
 }
@@ -324,8 +324,7 @@ em{
 .footer-grid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
-  gap:30px;
-  margin-bottom: 10px ; 
+  gap:30px; 
 }
 
 span{
@@ -333,10 +332,10 @@ span{
   font-size:20px ;
 }
 
-.footer{
-  margin-inline:15px;
-}
 .foot-links a{
   text-decoration: none;
   color:white;
+}
+.copy-right{
+ padding-bottom:5rem; 
 }

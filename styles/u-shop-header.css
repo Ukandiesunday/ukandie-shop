@@ -10,8 +10,7 @@ body{
 }
   .u-shop-header{
   height:80px;
-  padding-right:30px;
-  padding-left:30px;  
+  padding-inline:30px;  
   align-items: center;
   position:fixed;
   z-index:100;
@@ -25,98 +24,26 @@ body{
   background-color: rgb(19, 25, 33);
    color:white; 
 } 
-
-/* .nav */
-/* style rules for left header section  */
-
-/* .toggle-open{
-  margin:14px auto;
- position:absolute;
- right:-26px;
-visibility: visible;
-} */
-
-/* .dropdown-menu{
-  width:auto;
-  position:absolute; 
-  top:0;
-  left:0;
-  margin-left:30px;
-  z-index: 1;
-}  */
-
-/* .dropdown-content{
-position:relative;
-display:inline-block;
-background-color:white;
-z-index:1; 
-display: flex;
-flex-direction: column;
-width:250px;
-display:none;
-border-top-right-radius: 30px;
-border-bottom-right-radius: 50px;
-transition:0.5s;
-transform-origin:left;
-animation:slide 0.5s ease-in-out forwards;
-} */
-
- /* @keyframes slide {
-  0%{
-  transform:translateX(-20%)
-  }
-
-}  */
-
-/* .dropdown-content>a{
- display: flex;
-  justify-content: center;
-  text-decoration: none;
-  color:black;
-  font-size: 18px;
-  font-weight: 600;
-  width:100%;
-  /* max-width: px; */
-  /* padding:30px;
-  line-height: 2px;
-  position: relative;
-   transform-origin: left;
-  transition: 0.3s; */
-/* }  */
-
-
-
-/* .toggle-close{
-  border:none;
-  border-radius: 25px;
-  position:relative;
-  left:210px;
-  bottom:-10px;
-} */
-
  .header-left{
   display:flex;
-  width:100px;
+  width:120px;
   padding-left:30px;
   justify-content: center;
   align-items: center;
   position: relative;
    top:-10px; 
- ;
 } 
-
  .header-left-link{
 text-decoration: none;
 cursor: pointer;
 } 
 
- 
  .u-shop-logo{
   left:-10px;
-  top:-18px;
+  top:-24px;
    position: absolute;
   font-weight:600px;
-  font-size:20px;
+  font-size:25px;
   text-decoration: none;
   color:rgb(236, 137, 7);
   text-shadow:0 4px 3px  rgb(165, 97, 9);
@@ -127,17 +54,15 @@ cursor: pointer;
   margin-top:10px;
 } 
 
-
 /*Style rules for middle header section*/
- 
 .header-middle{
   height:45px;;
   display:flex;
   flex:1 1;
   position:relative;
   background-color: white;
-  border-radius:50% ;
-  margin-right:27px;
+  border-radius:5px;;
+   margin-right:27px; 
 }
 
 .search-icon{
@@ -146,26 +71,28 @@ cursor: pointer;
   margin:10px 10px 15px 20px;
 }
 
-#cart-message{
+.message{
   position: absolute;
   color:greenyellow;
   z-index: 1;
   background-color: rgb(236, 137, 7);
   font-size:18px;
   padding:4px;
-}
-.cart-message{
+  border-radius:5px;
   display:none;
 }
-
+.popUp{
+  display:inline-block;
+}
 .input-search{
   width:0;
   display:flex;
   flex:1 1 auto;
   border:none;
-  font-size:18px;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
+  font-size: inherit;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .input-search:focus{
@@ -175,9 +102,8 @@ cursor: pointer;
 .btn-search-icon{
   border:none;
   padding-bottom: 10px;
-  background-color:white;
-  border-top-left-radius:50px ;
-  border-bottom-left-radius:50px;
+  background-color:rgb(236, 137, 7);
+  border-radius:5px;
 }
 
 /*Style rules for left header section*/

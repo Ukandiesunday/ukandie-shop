@@ -78,11 +78,12 @@ document.querySelectorAll(".js-add-to-cart-btn")
 //To display add to cart notification
 addMessage ();
 function addMessage (popUpMessage){
-  const messages =  document.querySelector(".js-add-to-cart-message");
+  const messages =  document.getElementById("cart-message");
     messages.textContent = popUpMessage;
-    messages.classList.remove("cart-message");
+    !messages.classList.contains("popUp") &&
+     messages.classList.add("popUp") 
     setTimeout(()=>{
-    messages.classList.add("cart-message");
+    messages.classList.remove("popUp");
     },2000)
 }
   
