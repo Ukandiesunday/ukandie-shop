@@ -1,0 +1,62 @@
+
+.header{
+  position:fixed;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  left:0;
+  right:0;
+  background-color:rgba(19 25 33);
+  padding:5px;
+  top:0;
+  z-index: 100;
+}
+
+.header-left{
+margin-left:5rem;
+}
+
+@media(max-width){
+  .header-left{
+    width:auto;
+  }
+  
+}
+.u-shop-logo{
+  font-size:14px;
+  font-weight:600px;
+  text-decoration: none;
+  width:100%;
+  color:rgb(236, 137, 7);
+  text-shadow:0 4px 3px  rgb(165, 97, 9)
+} 
+
+
+.user-icon{
+  background-color: antiquewhite;
+  border-radius:50%;
+  margin-right:16px;
+  align-items: stretch;
+  margin-top:4px;
+
+} 
+
+ .header-right{
+  position:relative;
+  display:flex;
+  margin-right: 60px;
+  justify-content: center;
+ 
+} 
+
+ .cart-quantity{
+  color:white;
+  position:absolute;
+  left:75px;
+  top:-5px;
+  background-color:rgb(236 137 7);
+  padding:5px;
+  border-radius:50%;
+  font-weight:600;
+}

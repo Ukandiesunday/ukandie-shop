@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Circuit Project </title>
+    <link rel="stylesheet" href="styles/u-shop-header.css">
+    <link rel="stylesheet" href="styles/u-shop.css">
+  </head>
+  <body>
+    <div id="preloader">
+      <div id="spinner"><em></em></div>
+    </div>
+    <header>
+      <div class="u-shop-header">
+        <div class="header-left">
+          <a  href="index.html" class="header-left-link">
+            <span class="u-shop-logo"><h2>uShop</h2></span>
+          </a>
+        </div>
+        <div class="cart-message js-add-to-cart-message" id="cart-message">
+        </div>
+        <div class="header-middle">
+          <button class="btn-search-icon"><img src="images/icons/search-icon.png" alt="search-icon" class="search-icon"></button>
+          <input type="text" placeholder="search products, brands & category" class="input-search">
+        </div>
+
+        <div class="header-right">
+          <img class="user-icon" src="images/icons/user-icon.png" alt="user-icon" width="40" height="40">
+          <a href="checkout.html" class="cart-link">
+            <div class="cart-container">
+              <img src="images/icons/cart-icon.png" alt="cart-icon" class="cart-logo">
+              <span class="cart-quantity cart-total-quantity">0</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="slide-container">
+        <img src="images/men's-sleeveless.jpg" alt="sleeveless shirt" id="slider-image">
+          <img src="images/white-sneakers.jpg" alt="white men's shoe" id="slider-image">
+        <img  src="images/suit-trousers.jpg" alt=" men suit trousers" id="slider-image">
+        <img src="images/women's-standard-kit.jpg" alt="stock women clothes" id="slider-image">
+    </div>
+    <div class="marquee"><marquee behavior="scroll" direction="left">uShop holds a rousing shopping deal. Neglect late shoppings, Shop promptly and save fast with our amazing coupons today!!</marquee>
+    </div>
+    <div class="main">
+      <div class="product-grid js-product-grid">
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-grid">
+        <div class="foot-links">
+          <div><a href="#">Follow us </a></div>
+          <div><a href="#">Our Terms and Condition</a></div>
+          <div><a href="#">Contact Us</a></div>
+        </div>
+
+        <div class="foot-links">
+          <div><a href="#">Report a Product</a></div>
+          <div><a href="#">Ship Your Package anywhere in the world</a></div>
+          <p><a href="#">Create Account</a></p>
+          <p><a href="#">Login</a></p>
+        </div>
+      </div>
+      <p class="copy-right js-copy-right">
+      </p>
+    </div>
+    <script type="module" src="scripts/u-shop.js"></script>
+  </body>
+</html>
