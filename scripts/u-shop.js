@@ -2,33 +2,33 @@
 import {cart, increment, decrement} from "./cart.js";
 import {products} from "./products.js";
 
+// window.addEventListener("DOMContentLoaded",()=>{
+//   renderHTML(products)
+  
+// })
 let shop = document.querySelector(".js-product-grid");
-
 renderHTML();
-function renderHTML () {
+function renderHTML() {
 return(shop.innerHTML = products.map((product)=>{
- let {id, image, name, priceCent, unit, oldpriceCent, rating, } = product;
-
- let searchItem = cart.find((cartItem)=> cartItem.id === id)||[]; // To keep our quantity intact when page is refreshed;
- 
+ let searchItem = cart.find((cartItem)=> cartItem.id === product.id)||[]; // To keep our quantity intact when page is refreshed;
   return ` 
   <div class="product-container">
     <div class="image-container">
-      <img src="${image}" alt="khaki-sneakers" class="product-image">
+      <img src="${product.image}" alt="khaki-sneakers" class="product-image">
     </div>
     <div class="product-name">
-        ${name} 
+        ${product.name} 
     </div>
     <div class="price-container">
-      <div class="product-price">$${(priceCent)/100}</div>
-      <div class="old-price">$${(oldpriceCent)/100}</div>
+      <div class="product-price">$${(product.priceCent)/100}</div>
+      <div class="old-price">$${(product.oldpriceCent)/100}</div>
     </div>
     <div class="product-rating-container">
-      <img src="images/icons/product-rating-${(rating.stars)*10}.png" alt="ratings" class="rating-stars">
-      <div class="product-rating-count">(${rating.count})</div>
+      <img src="images/icons/product-rating-${(product.rating.stars)*10}.png" alt="ratings" class="rating-stars">
+      <div class="product-rating-count">(${product.rating.count})</div>
     </div>
     <div class="select-product-quantity">
-      <div class="units-left">${unit} units left</div>
+      <div class="units-left">${product.unit} units left</div>
      <div class="btns-container js-btns-container-${product.id}">
      <button class="decrease-btn js-decrease-btn-${product.id}">-</button> 
       <div class="update" id="update-${product.id}">${searchItem.quantity === undefined ? 0 : searchItem.quantity}</div>
@@ -36,19 +36,37 @@ return(shop.innerHTML = products.map((product)=>{
     </div>
     </div>
     <div class="shop-chant">uShop Express</div>
-    <button class="add-to-cart-btn js-add-to-cart-btn" const data-product-id = ${product.id}>Add to cart</button>
+    <button class="add-to-cart-btn js-add-to-cart-btn"  const data-product-id = ${product.id}>Add to cart</button>
   </div>
  ` 
 }).join(""));
 }
+// const button = document.createElement("button")
+// button.
+// const product = document.querySelector(".product-container");
+// console.log(product);
+// const input = document.querySelector(".input-search");
+//   input.addEventListener("input",(e)=>{
+//       let inputValue = e.target.value;
+//     const filteredProducts = products.filter((item)=>
+//     item.category === inputValue)
+//         renderHTML(filteredProducts)
+//       }
+//     )
+
+
+const btns = document.querySelectorAll(".js-add-to-cart-btn")
+console.log(btns) 
 // To get begin the add to cart process
-document.querySelectorAll(".js-add-to-cart-btn")
-.forEach((button)=>{
+//  document.querySelectorAll(".js-add-to-btn")
+ btns.forEach((button)=>{
   button.addEventListener("click",() => {
+    console.log("hello")
     const productId = button.dataset.productId;
     update(productId);
     updateCartTotalQty();
     addMessage("product updated")
+   
   
     button.style.display="none"
     document.querySelector(`.js-btns-container-${productId}`).style.opacity = "1"
@@ -71,6 +89,7 @@ document.querySelectorAll(".js-add-to-cart-btn")
         update(productId);
         updateCartTotalQty();
         addMessage("product added successfully");
+        
       })
     })
   })
