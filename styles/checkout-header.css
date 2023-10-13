@@ -14,32 +14,30 @@
 }
 
 .header-left{
-margin-left:5rem;
+margin-left:1.5rem;
 }
 
-@media(max-width){
-  .header-left{
-    width:auto;
+@media(max-width:768px){
+  .cart-quantity{
+  font-size:25px;;
   }
   
 }
 .u-shop-logo{
-  font-size:20px;
+  font-size:27px;
   font-weight:600px;
   text-decoration: none;
-  width:100%;
+  max-width:100px;
   color:rgb(236, 137, 7);
-  text-shadow:0 4px 3px  rgb(165, 97, 9)
+  text-shadow:0 4px 3px  rgb(165, 97, 9);
+  flex:1;
 } 
-
-
 .user-icon{
   background-color: antiquewhite;
   border-radius:50%;
   margin-right:16px;
   align-items: stretch;
   margin-top:4px;
-
 } 
 
  .header-right{
@@ -47,7 +45,6 @@ margin-left:5rem;
   display:flex;
   margin-right: 60px;
   justify-content: center;
- 
 } 
 
  .cart-quantity{
@@ -59,4 +56,5 @@ margin-left:5rem;
    padding:3px; 
   border-radius:50%;
   font-weight:600;
+  font-size:23px;
 }

@@ -59,11 +59,11 @@ cart.forEach((cartItem)=>{
 //   checkoutCartQty += cartItem.quantity
 // })
 let checkoutCartQty = cart.map((cartItem) => cartItem.quantity)
-.reduce((prevQuantity, nextQuantity)=> prevQuantity + nextQuantity, 0);
+.reduce((prevQuantity, nextQuantity) => prevQuantity + nextQuantity, 0);
 
 let summary = document.querySelector(".js-checkout-summary");
 summary.innerHTML =
-`   
+`
   <div class="order-summary-wrapper">
     <div class="order-summary-container">
       <h2 class="order-summary-heading">Order Summary</h2>
@@ -85,9 +85,8 @@ summary.innerHTML =
       <div class"items-price" id="total-bill">$${calcTotalBill(amount)}</div>
     </div>
     <div class="total-price-container">
-      <a href="checkout.html"><button class="order-button">Checkout
-      </button></a>
-      <a href="index.html" class="a-back-to-home"><button>Back To Home</button></a> 
+      <a href="checkout.html">Checkout</a>
+      <a href="index.html" class="a-back-to-home">Back To Home</a> 
     </div> 
   </div>
   `

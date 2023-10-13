@@ -7,7 +7,7 @@
   oldpriceCent:1272,
   category:"fashion",
   rating:{stars:4.5, count:137},
-  unit:6,
+  unit:6
 },
 
 {
@@ -18,7 +18,7 @@
   oldpriceCent:2551,
   category:"fashion",
   rating:{stars:4.0, count:108},
-  unit:4,
+  unit:4
 },
 
 {
@@ -29,7 +29,7 @@
   oldpriceCent:813,
   category:"fashion",
   rating:{stars:4.0, count:47},
-  unit:2,
+  unit:2
 },
 
 {
@@ -41,7 +41,7 @@
   category:"appliances",
   rating:{
   stars:4.5, count:22},
-  unit:2,
+  unit:2
 },
 
 {
@@ -52,7 +52,7 @@
   oldpriceCent:2091,
   category:"sports", 
   rating:{stars:4.5, count:29},
-  unit:2,
+  unit:2
   },
 
 {
@@ -74,7 +74,7 @@
   oldpriceCent:911,
   category:"appliances",
   rating:{stars:4.5, count:5},
-  unit:2,
+  unit:2
 },
 
 {
@@ -85,7 +85,7 @@
   oldpriceCent:606,
   category:"fashion",
   rating:{stars:4.0, count:31},
-  unit:3,
+  unit:3
 },
 
 {
@@ -96,7 +96,7 @@
   oldpriceCent:2195,
   category:"sports",
   rating:{stars:4.5, count:34},
-  unit:2,
+  unit:2
 },
 
 {
@@ -107,7 +107,7 @@
   oldpriceCent:2304,
   category:"sports",
   rating:{stars:4.5, count:2},
-  unit:3,
+  unit:3
 },
 
 {
@@ -118,7 +118,7 @@
   oldpriceCent:102,
   category:"fashion",
   rating:{stars:4.5, count:9},
-  unit:2,
+  unit:2
 },
 
 {
@@ -129,7 +129,7 @@
   oldpriceCent:589,
   category:"fashion",
   rating:{stars:4.5, count:3},
-  unit:4,
+  unit:4
 },
 
 {
@@ -140,7 +140,7 @@
   oldpriceCent:2355,
   category:"fashion",
   rating:{stars:4.0, count:31},
-  unit:5,
+  unit:5
 },
 
 {
@@ -151,7 +151,7 @@
   oldpriceCent:567,
   category:"fashion",
   rating:{stars:4.5, count:23},
-  unit:5,
+  unit:5
 },
 
 {
@@ -162,7 +162,7 @@
   oldpriceCent:132,
   category:"sports",
   rating:{stars:4.0, count:11},
-  unit:5,
+  unit:5
 },
 
 {
@@ -173,7 +173,7 @@
   oldpriceCent:455,
   category:"fashion",
   rating:{stars:4.5, count:9},
-  unit:3,
+  unit:3
 },
 
 {
@@ -184,7 +184,7 @@
   oldpriceCent:588,
   category:"fashion",
   rating:{stars:4.0, count:4},
-  unit:4,
+  unit:4
 },
 
 {
@@ -195,7 +195,7 @@
   oldpriceCent:1021,
   category:"fashion",
   rating:{stars:4.5, count:322},
-  unit:2,
+  unit:2
 },
 
 {
