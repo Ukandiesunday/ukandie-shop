@@ -2,10 +2,6 @@
 import {cart, increment, decrement} from "./cart.js";
 import {products} from "./products.js";
 
-// window.addEventListener("DOMContentLoaded",()=>{
-//   renderHTML(products)
-  
-// })
 let shop = document.querySelector(".js-product-grid");
 renderHTML();
 function renderHTML() {
@@ -41,24 +37,14 @@ return(shop.innerHTML = products.map((product)=>{
  ` 
 }).join(""));
 }
-// const button = document.createElement("button")
-// button.
-// const product = document.querySelector(".product-container");
-// console.log(product);
-// const input = document.querySelector(".input-search");
-//   input.addEventListener("input",(e)=>{
-//       let inputValue = e.target.value;
-//     const filteredProducts = products.filter((item)=>
-//     item.category === inputValue)
-//         renderHTML(filteredProducts)
-//       }
-//     )
-
+//Header login
+const user = document.querySelector(".user-icon");
+const account = document.querySelector(".account")
+user.addEventListener("click",()=>{
+account.classList.toggle("open")
+})
 
 const btns = document.querySelectorAll(".js-add-to-cart-btn")
-console.log(btns) 
-// To get begin the add to cart process
-//  document.querySelectorAll(".js-add-to-btn")
  btns.forEach((button)=>{
   button.addEventListener("click",() => {
     console.log("hello")
@@ -67,7 +53,6 @@ console.log(btns)
     updateCartTotalQty();
     addMessage("product updated")
    
-  
     button.style.display="none"
     document.querySelector(`.js-btns-container-${productId}`).style.opacity = "1"
 
@@ -89,7 +74,6 @@ console.log(btns)
         update(productId);
         updateCartTotalQty();
         addMessage("product added successfully");
-        
       })
     })
   })
@@ -103,7 +87,7 @@ function addMessage (popUpMessage){
      messages.classList.add("popUp") 
     setTimeout(()=>{
     messages.classList.remove("popUp");
-    },2000)
+    },1000)
 }
   
 // TO update each quantity in cart

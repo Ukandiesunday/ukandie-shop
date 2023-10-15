@@ -65,21 +65,47 @@ cursor: pointer;
 } 
 
 /*Style rules for middle header section*/
-.header-middle{
-  height:45px;;
-  display:flex;
-  flex:1 1;
-  position:relative;
-  background-color: white;
-  border-radius:5px;;
-   margin-right:27px; 
+.account{
+  width:100px;
+  position:fixed;
+  right:170px;
+  top:70px;
+  padding:10px;
+  background:whitesmoke;
+  transition:all 0.5s;
+  border-radius:5px;
+  display:none;
+  color:palevioletred;;
+  z-index: 2;
 }
+.account span{
+  margin-top:10px;
 
-.search-icon{
-  width:30px;
-  height:30px;
-  margin:10px 10px 15px 20px;
 }
+.account.open{
+  display:block;
+  transition:all 0.5s;
+  }
+@media (max-width:768px) {
+  .span{
+    display:none;
+    }  
+}
+.span{
+  position:relative;
+  }
+.span::after{
+  content:"";
+  position:absolute;
+  right:-7px;
+  bottom:10;
+  width:4px;
+  height:100%;
+  background-color:red
+}
+.header-middle span{
+ margin:15px;
+ }
 
 .message{
   position: absolute;
@@ -93,27 +119,6 @@ cursor: pointer;
 }
 .popUp{
   display:inline-block;
-}
-.input-search{
-  width:0;
-  display:flex;
-  flex:1 1 auto;
-  border:none;
-  font-size: inherit;
-  text-align: center;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.input-search:focus{
-  outline:none;
-}
-
-.btn-search-icon{
-  border:none;
-  padding-bottom: 10px;
-  background-color:rgb(236, 137, 7);
-  border-radius:5px;
 }
 
 /*Style rules for left header section*/
@@ -135,15 +140,15 @@ cursor: pointer;
 }
 
 .cart-logo{
-  width:60px;
+  width:50px;
   padding-left:10px;
 
 }
 
 .cart-quantity{
   position:absolute;
-  top:-4px;
-  right:-16px;
+  top:-7px;
+  right:-13px;
   color:white;
   background-color:rgb(236, 137, 7);
   border-radius:50%;
@@ -160,7 +165,7 @@ cursor: pointer;
  .user-icon{
   position:relative;
   right:65px;
-  left:6px;
+  left:-18px;
   background-color: beige;
   border-radius:50%;
 }

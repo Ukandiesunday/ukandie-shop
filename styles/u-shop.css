@@ -92,9 +92,12 @@ body{
   transition:transform 0.5s ease-in-out;
   font-size:20px;
 }
-/* .product-container:hover{
+.product-container:hover{
 transform:scale(1.07);
-} */
+}
+.fa-brands{
+  margin:10px;
+}
 @media (max-width:768px) {
   .product-containe{
     font-size:19px;
@@ -183,13 +186,11 @@ margin-bottom: 2px;
   border:none;
   box-shadow:0px 4px 0px 0px rgb(236,137,7);
 }
-.decrease-btn:active{
-  background-color: red;
-  transform: scaleY(90%);
-  
+.decrease-btn:hover{
+  background-color: red; 
 }
 
-.increase-btn:active{
+.increase-btn:hover{
   background-color: green;
   transform: scaleY(90%);
 }
@@ -224,6 +225,7 @@ margin-bottom: 2px;
 .add-to-cart-btn:hover{
   background-color:yellow;
   color:black;
+  border:2px solid rgb(236, 137, 7); 
 }
 
 /* Style rules for preloader*/
