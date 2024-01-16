@@ -48,7 +48,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .main {
-  padding: 0 4% 60px 4%;
+  padding: 0 6% 60px 6%;
 }
 /*General style rules for product container*/
 .product-container {
