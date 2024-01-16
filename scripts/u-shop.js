@@ -10,8 +10,11 @@ function renderHTML() {
         cart.find((cartItem) => cartItem.id === product.id) || []; // To keep our quantity intact when page is refreshed;
       return ` 
   <div class="product-container">
+  <div class="img-wrapper">
     <div class="image-container">
+    
       <img src="${product.image}" alt="khaki-sneakers" class="product-image">
+    </div>
     </div>
     <div class="product-name">
         ${product.name} 

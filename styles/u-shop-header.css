@@ -13,9 +13,11 @@ header {
   left: 0;
   width: 100%;
   z-index: 99;
-  height: 200px;
 }
-
+.fa-cart-shopping {
+  color: black;
+  background-color: white;
+}
 .u-shop-header {
   height: 70px;
   padding-inline: 30px;
@@ -27,7 +29,6 @@ header {
   column-gap: 10px;
   justify-content: space-evenly;
   background-color: white;
-  color: white;
   box-shadow: 0 1px 2px rgb(186, 177, 177);
 }
 
@@ -44,10 +45,7 @@ header {
   text-decoration: none;
   cursor: pointer;
 }
-.u-shop-header i {
-  width: 50px;
-  display: none;
-}
+
 .u-shop-logo {
   left: -10px;
   top: -24px;
@@ -121,38 +119,36 @@ h2 {
 }
 
 /*Style rules for left header section*/
-.header-right {
-  width: 3rem;
-  margin-right: 40px;
-  margin-left: 20px;
-  display: flex;
-  flex-shrink: 0;
-  justify-content: space-between;
-  justify-content: flex-end;
+.fa-cart-shopping {
   position: relative;
 }
 
-.cart-link {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.cart-logo {
-  width: 50px;
-  padding-left: 10px;
-}
-
-.cart-quantity {
+#cart {
   position: absolute;
-  top: -7px;
-  right: -13px;
+  font-size: 16px;
+  top: -14px;
+  left: 10px;
   color: white;
-  background-color: rgb(236, 137, 7);
+  background-color: rgb(236 137 7);
+  padding: 4px;
   border-radius: 50%;
-  font-weight: 700;
-  font-size: 19px;
-  width: 30px;
-  text-align: center;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-size: 23px;
+}
+
+.user-container {
+  background-color: rgb(224, 219, 219);
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .cart-quantity {

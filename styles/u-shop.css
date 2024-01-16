@@ -8,64 +8,30 @@ body {
   background-color: rgb(243, 240, 240);
 }
 
-.main {
-  margin: 10px 30px 60px 30px;
-}
-
-/* Style rules for the slide animation */
-.slide-container {
-  width: 90%;
-  background-color: black;
-  overflow: hidden;
-  white-space: nowrap;
-  border-radius: 8px;
-  margin-top: 84px;
-}
-
-#slider-image {
+.slider-container {
   width: 100%;
-
-  display: inline-block;
-  margin-right: px;
-  object-fit: cover;
-  animation: slider 18s infinite linear;
+  /* height: 40vh; */
+  background-color: rgb(249, 165, 55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-/* 
- @keyframes slider {
-  0%{
-    transform:translateX(0);
-  }
-  100%{
-    transform:translateX(-100%)
-  }
-}
-  */
 
-@keyframes slider {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(0);
-  }
-  30% {
-    transform: translateX(-100%);
-  }
-  45% {
-    transform: translateX(-100%);
-  }
-  60% {
-    transform: translateX(-100%);
-  }
-  75% {
-    transform: translate(-300%);
-  }
-  85% {
-    transform: translate(-300%);
-  }
-  100% {
-    transform: translate(1%);
-  }
+.swiper {
+  width: 550px;
+
+  height: 300px;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next,
+.swiper-pagination {
+  font-size: 20px;
+  padding: 4px;
 }
 
 .marquee {
@@ -73,16 +39,17 @@ body {
   font-size: 27px;
   font-weight: 600;
   text-shadow: 0px 4px 4px purple;
+  margin: 30px 0 20px;
 }
-/* style rules for slide animation stops*/
 
-/*media query for responsiveness*/
 .product-grid {
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-
+.main {
+  padding: 0 4% 60px 4%;
+}
 /*General style rules for product container*/
 .product-container {
   display: flex;
@@ -93,11 +60,12 @@ body {
   border-radius: 10px;
   z-index: 70;
   background-color: white;
-  transition: transform 0.5s ease-in-out;
-  margin-bottom: 20px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 1px rgb(80, 74, 74);
 }
 .product-container:hover {
-  transform: scale(1.07);
+  transform: scale(1.01);
+  box-shadow: 0 0 2px rgb(80, 74, 74);
 }
 .fa-brands {
   margin: 5px;
@@ -111,14 +79,20 @@ body {
     font-size: 14px;
   }
 }
+.img-wrapper {
+  width: 300px;
+  height: 150px;
+}
 
 .image-container {
   width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
 .product-image {
   width: 100%;
+  height: 100%;
   object-fit: contain;
   display: block;
 }
@@ -134,9 +108,6 @@ body {
   margin-left: -7px;
   margin-bottom: 15px;
 }
-/* .product-price {
-  color:blc;
-} */
 
 .old-price {
   text-decoration: line-through;
@@ -279,9 +250,24 @@ em {
   gap: 30px;
 }
 
+.call-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(236, 137, 7);
+  color: black;
+  padding: 13px 10%;
+  font-size: 20px;
+  margin: 75px 0 6px;
+  text-align: center;
+}
+
+.call-wrapper span {
+  font-size: 20px;
+}
 span {
   color: red;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .foot-links a {
@@ -290,5 +276,5 @@ span {
   font-size: 15px;
 }
 .copy-right {
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }

@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Circuit Project </title>
-    <link rel="stylesheet" href="styles/u-shop-header.css">
-    <link rel="stylesheet" href="styles/u-shop.css">
-    <script src="https://kit.fontawesome.com/cbc94a0dc0.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Circuit Project</title>
+    <link rel="stylesheet" href="styles/u-shop-header.css" />
+    <link rel="stylesheet" href="styles/u-shop.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/cbc94a0dc0.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div id="preloader">
@@ -15,48 +23,80 @@
     <header>
       <div class="u-shop-header">
         <div class="header-left">
-          <a  href="index.html" class="header-left-link">
+          <a href="index.html" class="header-left-link">
             <span class="u-shop-logo"><h2>uShop</h2></span>
           </a>
         </div>
-        <div class="message" id="cart-message">
-        </div>
+        <div class="message" id="cart-message"></div>
         <div class="header-middle">
           <span class="span">Report products</span>
-          <span  class="span">Order products</span>
+          <span class="span">Order products</span>
         </div>
         <div class="account">
           <span>Create Account</span>
           <span>Login</span>
         </div>
         <div class="header-right">
-          <img class="user-icon" src="images/icons/user-icon.png" alt="user-icon" width="30" height="30">
-          <a href="checkout.html" class="cart-link">
-            <div class="cart-container">
-              <img src="images/icons/cart-icon.png" alt="cart-icon" class="cart-logo">
-              <span class="cart-quantity cart-total-quantity">0</span>
-            </div>
-          </a>
+          <div class="user-container user-icon">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="cart-container">
+            <a href="checkout.html">
+              <i class="fa-solid fa-cart-shopping">
+                <span id="cart" class="cart-quantity cart-total-quantity"
+                  >0</span
+                >
+              </i>
+            </a>
+          </div>
         </div>
       </div>
     </header>
-    <div class="slide-container">
-        <img src="images/men's-sleeveless.jpg" id="slider-image">
-          <img src="images/white-sneakers.jpg" id="slider-image">
-        <img  src="images/suit-trousers.jpg"  id="slider-image">
-        <img src="images/women's-standard-kit.jpg" id="slider-image">
+    <div>
+      <div class="call-wrapper">
+        <h4 class="call"><span>Call To Order</span>: 09023560242</h4>
+      </div>
     </div>
-    <div class="marquee"><marquee behavior="scroll" direction="left">uShop holds a rousing shopping deal. Neglect late shoppings, Shop promptly and save fast with our amazing coupons today!!</marquee>
+
+    <div class="slider-container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/men's-sleeveless.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/white-sneakers.jpg" />
+          </div>
+          <div class="swiper-slide"><img src="images/suit-trousers.jpg" /></div>
+          <div class="swiper-slide">
+            <img src="images/women's-standard-kit.jpg" />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <div class="marquee">
+      <marquee behavior="scroll" direction="left"
+        >uShop holds a rousing shopping deal. Neglect late shoppings, Shop
+        promptly and save fast with our amazing coupons today!!</marquee
+      >
     </div>
     <div class="main">
-      <div class="product-grid js-product-grid">
-      </div>
+      <div class="product-grid js-product-grid"></div>
     </div>
     <div class="footer">
       <div class="footer-grid">
         <div class="foot-links">
-          <div><a href="">Follow us </a><br>
+          <div>
+            <a href="">Follow us </a><br />
             <i class="fa-brands fa-facebook"></i>
+
             <i class="fa-brands fa-square-whatsapp"></i>
             <i class="fa-brands fa-square-instagram"></i>
           </div>
@@ -70,9 +110,28 @@
           <p><a href="#">Login</a></p>
         </div>
       </div>
-      <p class="copy-right js-copy-right">
-      </p>
+      <p class="copy-right js-copy-right"></p>
     </div>
     <script type="module" src="scripts/u-shop.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
